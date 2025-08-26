@@ -13,8 +13,8 @@ RUN mkdir "/build"
 
 # Every hour
 ENV INTERVAL=3600
-# Hours in a year
-ENV LOOP_COUNT=876581277
+# Hours in 2 years
+ENV LOOP_COUNT=1753162554
 ENTRYPOINT ["/srv/entry.sh"]
 
 VOLUME /build
