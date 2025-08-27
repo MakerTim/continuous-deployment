@@ -11,7 +11,7 @@ main() {
   while [[ "$i" -lt $LOOP_COUNT ]]; do
     {
       if [[ -z ${SKIP_GIT} ]]; then
-        [[ $(git pull) == 'Already up to date.' ]] || continue
+        [[ $(git pull) == 'Already up to date.' ]] || sleep "${INTERVAL:?}" && continue
       fi
       # shellcheck disable=SC2093
       sh "$@"
