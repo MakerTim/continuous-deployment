@@ -1,5 +1,8 @@
 # makertim/continuous-deployment
+https://hub.docker.com/r/makertim/continuous-deployment
+
 Containerized pulling from git, building the container, reloading docker compose.
+Kinda a kubenetes setup, just not.
 
 ## Setup & usage
 Run inside the git repo directory.
